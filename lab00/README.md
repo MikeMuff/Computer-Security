@@ -4,9 +4,11 @@
 # MuffMike1@gmail.com
 # 1/19/21
 ## Task 1
+- Screenshot below showing that I completed the questionnaire.
 <img width="1436" alt="task1" src="https://user-images.githubusercontent.com/33213355/105085864-9f85d400-5a55-11eb-9800-1185e544ccc5.png">
 
 ## Task 2
+- Screenshot below verifying my SEED VM is setup and running.
 <img width="1037" alt="Screen Shot 2021-01-19 at 12 35 30 PM" src="https://user-images.githubusercontent.com/33213355/105085975-c6dca100-5a55-11eb-87ac-9c6fac5684b0.png">
 
 ## Task 3
