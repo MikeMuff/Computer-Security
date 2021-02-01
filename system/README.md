@@ -5,7 +5,7 @@
 # 1/28/21
 
 ## Task 1
-fork() = System call used to create a new process by duplicating the calling process and making it a child of the call.__
+fork() = System call used to create a new process by duplicating the calling process and making it a child of the call.  
 exec() = System call used to create a new process by replacing the calling process with a new process image.
 
 ## Task 2
@@ -37,7 +37,7 @@ argv = 0x7ffc6c8cc733
 environ = 0x7ffc6c8cb1b8
 
 ## Task 8
-Preprocessing: Obeys commands that begin with #.__
-Compiling: Takes the output of the prepocessor and generates assembly langauge.__
-Assembly: The assembler will convert the assembly code into pure binary or machine code.__
+Preprocessing: Obeys commands that begin with #.  
+Compiling: Takes the output of the prepocessor and generates assembly langauge.  
+Assembly: The assembler will convert the assembly code into pure binary or machine code.  
 Linking: The linker merges all the object code from multiple mudules into a single one.
