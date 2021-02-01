@@ -29,4 +29,15 @@ Spyware, people accessing your network, files, etc remotely, using your computer
 Trust boundary: A location on the data flow diagram where data changes its level of trust. Any place where data is passed between two processes.
 
 ## Task 6
-Push and popped, function arguments, return address, previous frame pointer, local variables.
+Function arguments, return address, previous frame pointer, local variables.
+## Task 7
+main = 0x55a47dccf249
+printf = 0x7f8278032e10
+argv = 0x7ffc6c8cc733
+environ = 0x7ffc6c8cb1b8
+
+## Task 8
+Preprocessing: Obeys commands that begin with #.
+Compiling: Takes the output of the prepocessor and generates assembly langauge.
+Assembly: The assembler will convert the assembly code into pure binary or machine code.
+Linking: The linker merges all the object code from multiple mudules into a single one.
