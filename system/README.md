@@ -26,4 +26,7 @@ Data is the input or output of an application while code is the set of instructi
 Spyware, people accessing your network, files, etc remotely, using your computer for malicious intent, recruited to botnet.
 
 ## Task 5
+Trust boundary: A location on the data flow diagram where data changes its level of trust. Any place where data is passed between two processes.
 
+## Task 6
+Push and popped, function arguments, return address, previous frame pointer, local variables.
