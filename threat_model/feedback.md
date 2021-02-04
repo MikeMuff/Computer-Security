@@ -1,0 +1,3 @@
+- Looks good overall!
+- Please fix the header for your submission. See https://www.traviswpeters.com/cs476-2021-spring/labs#example-structure-of-a-lab-report-readmemd.
+- It would have been nice to see a bit more depth/structure to your threat model. Are "theft" and "installing a RAT" really the only threats?!
