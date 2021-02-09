@@ -56,4 +56,4 @@ After setting the environment variables in the child process to be inherited be 
 - When myprog is ran as a Set-UID user1 as a user1 user, the program is not sleeping.
 
 ## Task 7.3
-
+Depending on the permissions within the myprog file, the sleep function called in the mylib program will either be called or halted. When calling the myprog file with the various tested conditions, the only time that the sleep function was not bypassed was when I called Set_UID root myprog program as a normal user with LD_PRELOAD environment variable exported. I belive that this was caused because the child isnt able to inherit the LD_ environment variables, therefor when calling a Set-UID program with no root permissions regardless of the LD_ environment variables it will not succeed.
