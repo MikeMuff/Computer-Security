@@ -33,4 +33,27 @@ A new program gets its environment variables in this instance by copying whateve
 Compiled and ran myenv_system
 
 ## Task5.1
+Ran myenv_environ and it correctly printed out the environment variables.
 <img width="1425" alt="Screen Shot 2021-02-09 at 12 10 34 PM" src="https://user-images.githubusercontent.com/33213355/107414917-e5234300-6acf-11eb-9694-399fd789bc1b.png">
+
+## Task5.2
+Changed myenv_environ owner to root and made it a Set-UID program.
+
+## Task5.3
+After setting the environment variables in the child process to be inherited be the parent process, I noticed that the myenv_environ file is now highlited red. This is to state that it is now a SET-UID program.
+<img width="840" alt="Screen Shot 2021-02-09 at 12 49 36 PM" src="https://user-images.githubusercontent.com/33213355/107419965-9ed0e280-6ad5-11eb-91c9-50dc2239bd58.png">
+
+# Task6.1
+
+# Task 7.1
+
+<img width="1103" alt="Screen Shot 2021-02-09 at 2 35 28 PM" src="https://user-images.githubusercontent.com/33213355/107431792-2e7d8d80-6ae4-11eb-9b06-48db9319ee8e.png">
+
+## Task7.2
+- When myprog is ran as a regular program and normal user, the program is not sleeping
+- When myprog is ran as a Set-UID root as a normal user, nothing is returned. Therefor sleep is called with return variable 1.
+- When myprog is ran as a Set-UID root as a root user, the program is not sleeping.
+- When myprog is ran as a Set-UID user1 as a user1 user, the program is not sleeping.
+
+## Task 7.3
+
