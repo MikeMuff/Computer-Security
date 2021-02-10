@@ -66,6 +66,8 @@ My attacks from 8.1 do not still work. This is due to the fact that system invok
 
 ## Task 9
 At first I had to create a /etc/zzz file through root. From there I was able to play around with calling the program but was unable to get past the initial if statement due to lack of permission through the file. After chaging the owner of the file to root and making it a Set_UID program, I was able to force the program to call the child (else) process and insert the "Malicious Data" into /etc/zzz.
+
 <img width="199" alt="Screen Shot 2021-02-09 at 5 19 06 PM" src="https://user-images.githubusercontent.com/33213355/107446492-c9ce2d00-6afb-11eb-9388-e37b096921c6.png">
+
 Overall a very cool, hands on assignment that I had a blast completeing!
 
