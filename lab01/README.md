@@ -46,7 +46,7 @@ After setting the environment variables in the child process to be inherited be 
 # Task6.1
 Yes, you can make your program run code instead of /bin/ls because it is using system() to run ls which invokes a new shell.
 # Task 7.1
-
+Buildt a dynamically linked library.
 <img width="1103" alt="Screen Shot 2021-02-09 at 2 35 28 PM" src="https://user-images.githubusercontent.com/33213355/107431792-2e7d8d80-6ae4-11eb-9b06-48db9319ee8e.png">
 
 ## Task7.2
