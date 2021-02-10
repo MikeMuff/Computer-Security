@@ -9,7 +9,7 @@
 Used pirntenv command to print out environment variables
 
 ## Task1.2
-Used export
+Used man export to learn more about command.
 
 ## Task2.1
 After compiling myprintenv.c the output text file that was created held the same information as when I ran the printenv command except a couple variables such as  XDG_SESSION_ID and SSH_TTY changed.
@@ -30,7 +30,7 @@ After changing the arguments of the execve call, it then printed out the same ou
 A new program gets its environment variables in this instance by copying whatever arguments are called inside of execve and placing them in the new program.
 
 ## Task4
-Compiled and ran myenv_system
+Compiled and ran myenv_system.
 
 ## Task5.1
 Ran myenv_environ and it correctly printed out the environment variables.
@@ -44,7 +44,7 @@ After setting the environment variables in the child process to be inherited be 
 <img width="840" alt="Screen Shot 2021-02-09 at 12 49 36 PM" src="https://user-images.githubusercontent.com/33213355/107419965-9ed0e280-6ad5-11eb-91c9-50dc2239bd58.png">
 
 # Task6.1
-
+Yes, you can make your program run code instead of /bin/ls because it is using system() to run ls which invokes a new shell.
 # Task 7.1
 
 <img width="1103" alt="Screen Shot 2021-02-09 at 2 35 28 PM" src="https://user-images.githubusercontent.com/33213355/107431792-2e7d8d80-6ae4-11eb-9b06-48db9319ee8e.png">
