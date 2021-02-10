@@ -57,3 +57,15 @@ After setting the environment variables in the child process to be inherited be 
 
 ## Task 7.3
 Depending on the permissions within the myprog file, the sleep function called in the mylib program will either be called or halted. When calling the myprog file with the various tested conditions, the only time that the sleep function was not bypassed was when I called Set_UID root myprog program as a normal user with LD_PRELOAD environment variable exported. I belive that this was caused because the child isnt able to inherit the LD_ environment variables, therefor when calling a Set-UID program with no root permissions regardless of the LD_ environment variables it will not succeed.
+
+## Task 8.1
+Yes, Bob can comprimise the integrity of the system and can remove a file that is not writable to him.
+
+## Task 8.2
+My attacks from 8.1 do not still work. This is due to the fact that system invokes a shell while execve does not. When Bob uses the file with system(command) he is able to do much more than just look at the contents of a file, when Bob uses the file with execve command he can only view files within his system.
+
+## Task 9
+At first I had to create a /etc/zzz file through root. From there I was able to play around with calling the program but was unable to get past the initial if statement due to lack of permission through the file. After chaging the owner of the file to root and making it a Set_UID program, I was able to force the program to call the child (else) process and insert the "Malicious Data" into /etc/zzz.
+<img width="199" alt="Screen Shot 2021-02-09 at 5 19 06 PM" src="https://user-images.githubusercontent.com/33213355/107446492-c9ce2d00-6afb-11eb-9388-e37b096921c6.png">
+Overall a very cool, hands on assignment that I had a blast completeing!
+
