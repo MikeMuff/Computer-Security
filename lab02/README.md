@@ -56,7 +56,14 @@ Here is the /tmp directory after calling the command above.
 <img width="877" alt="Screen Shot 2021-02-16 at 10 04 47 AM" src="https://user-images.githubusercontent.com/33213355/108096883-b44a8d00-703e-11eb-8026-f65361b0374d.png">  
 
 ## Task 3.5
-I intially tried to print the contents of the /etc/shadow file with my similar tactic that I ran within Task 3.1 while using the cat command but that did not work. I realized after some tinkering that my initial attempt did not work because I did have permission to view this file and needed to run sudo before cat in order to view the shadow file. This was unsuccessful because sudo is normally stored within the /usr/bin/sudo, after using the whereis command I realized that sudo was not an option within this lab shell making my attempt non-accessible.  
+I intially tried to print the contents of the /etc/shadow file with my similar tactic that I ran within Task 3.1 while using the cat command but that did not work. I realized after some tinkering that my initial attempt did not work because I did have permission to view this file and needed to run sudo before cat in order to view the shadow file. This was unsuccessful because sudo is normally stored within the /usr/bin/sudo, after using the whereis command I realized that sudo was not an option within the web server making my attempt non-accessible.  
 
 ## Task 4
+I was able to eastablish connection from my attacker shell to the online web server. I have posted pictures bellow of both shells.  
+Attacker shell.  
+<img width="881" alt="Screen Shot 2021-02-16 at 11 39 53 AM" src="https://user-images.githubusercontent.com/33213355/108106975-dc8cb880-704b-11eb-937d-7c9ec4faba05.png">  
+Server shell.  
+<img width="1279" alt="Screen Shot 2021-02-16 at 11 40 11 AM" src="https://user-images.githubusercontent.com/33213355/108107083-fd550e00-704b-11eb-8321-8f44c366af1d.png">  
+
+## Task 5.1
 
