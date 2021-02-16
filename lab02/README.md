@@ -65,5 +65,24 @@ Attacker shell.
 Server shell.  
 <img width="1279" alt="Screen Shot 2021-02-16 at 11 40 11 AM" src="https://user-images.githubusercontent.com/33213355/108107083-fd550e00-704b-11eb-8321-8f44c366af1d.png">  
 
-## Task 5.1
+## Task 5
+For this task I nagivated into the vul.cgi file with the command nano /usr/lib/cgi-bin/vul.cgi and edited the script to /bin/bash.  
 
+## Task 5.1
+After reruning the same attack that I previously did for 3.1, instead of outputing the etc/passwd file it just printed "Hello World"  
+<img width="1337" alt="Screen Shot 2021-02-16 at 11 58 44 AM" src="https://user-images.githubusercontent.com/33213355/108108862-6a69a300-704e-11eb-8ab7-2ff96243a9b8.png">  
+
+## Task 5.2
+Same result as the previous task.  
+<img width="1264" alt="Screen Shot 2021-02-16 at 12 00 37 PM" src="https://user-images.githubusercontent.com/33213355/108109052-a69d0380-704e-11eb-8025-651cc0a3ecfc.png">  
+
+## Task 5.3
+Same result as the previous task. When nagivating to the tmp folder on the web server shell there was no tmp file created.  
+<img width="1303" alt="Screen Shot 2021-02-16 at 12 03 22 PM" src="https://user-images.githubusercontent.com/33213355/108109366-fda2d880-704e-11eb-935b-0fbb0b51fba5.png">  
+
+## Task 5.4
+There was no tmp file to be deleted but I ran the rm command anyway and it still outputed "Hello World".
+
+## Task 5.5
+Same output as the previous tasks.  
+<img width="1324" alt="Screen Shot 2021-02-16 at 12 05 46 PM" src="https://user-images.githubusercontent.com/33213355/108109610-5c685200-704f-11eb-87e0-0490be5c5a78.png">
