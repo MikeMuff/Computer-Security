@@ -44,4 +44,19 @@ I was able to get the server to tell me its process' user ID by using curl -A. I
 <img width="1261" alt="Screen Shot 2021-02-15 at 4 57 46 PM" src="https://user-images.githubusercontent.com/33213355/108003271-7c483900-6faf-11eb-92b7-b88365c39856.png">
 
 ## Task 3.3
+I was able to create a file inside the /tmp folder by using curl -e. I first created a test string within the initial echo command, from there I established the Content-Type and was able to get the server to create a file within the temp folder but running /bin/mktemp in my tralling command.  
+<img width="1271" alt="Screen Shot 2021-02-16 at 9 47 43 AM" src="https://user-images.githubusercontent.com/33213355/108094982-9bd97300-703c-11eb-8e06-25fa5c3b1642.png">  
+Here is the /tmp folder within my shellshock bash that was created  
+<img width="750" alt="Screen Shot 2021-02-16 at 9 48 19 AM" src="https://user-images.githubusercontent.com/33213355/108095102-bf042280-703c-11eb-93db-617f4ba58227.png">  
+
+## Task 3.4
+I was able to delete the file inside the /tmp folder by using curl -A. I first created a test string within the initial echo command, then established the Content-Type and was able to remove the file by using /bin/rm /tmp/tmp.G4rJsRQrY0 which deleted the file.  
+<img width="1372" alt="Screen Shot 2021-02-16 at 10 04 13 AM" src="https://user-images.githubusercontent.com/33213355/108096807-a137bd00-703e-11eb-9fb5-e0d0703403c5.png">  
+Here is the /tmp directory after calling the command above.  
+<img width="877" alt="Screen Shot 2021-02-16 at 10 04 47 AM" src="https://user-images.githubusercontent.com/33213355/108096883-b44a8d00-703e-11eb-8026-f65361b0374d.png">  
+
+## Task 3.5
+I intially tried to print the contents of the /etc/shadow file with my similar tactic that I ran within Task 3.1 while using the cat command but that did not work. I realized after some tinkering that my initial attempt did not work because I did have permission to view this file and needed to run sudo before cat in order to view the shadow file. This was unsuccessful because sudo is normally stored within the /usr/bin/sudo, after using the whereis command I realized that sudo was not an option within this lab shell making my attempt non-accessible.  
+
+## Task 4
 
