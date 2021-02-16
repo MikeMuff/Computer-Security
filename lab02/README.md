@@ -31,3 +31,17 @@ Using the -e command allowed me to set the "Referer" name to a string. This send
 Using the -H command allowed me to change the header to a string. This creates an extra header to use when getting a web page.  
 <img width="818" alt="Screen Shot 2021-02-15 at 4 05 47 PM" src="https://user-images.githubusercontent.com/33213355/108000648-b01f6080-6fa7-11eb-9829-4b53aecf5752.png">
 
+## Task 2.2.5
+curl -A, -e and -H all could be used to inject data into environment variables of the target CGI program.
+
+## Task 3.1
+Within this task I used curl -e. I was able to get the /etc/passwd file to print while creating a test string, establishing the Content-type and finally was able to get the passwd file to output by calling /bin/cat into /etc/passwd in my trailing command.  
+<img width="1378" alt="Screen Shot 2021-02-15 at 5 43 34 PM" src="https://user-images.githubusercontent.com/33213355/108005226-63428680-6fb5-11eb-8f73-3ba0f10d29af.png">
+
+
+## Task 3.2
+I was able to get the server to tell me its process' user ID by using curl -A. I first created a test string within the initial echo command, from there I established the Content-Type and was able to get the user ID to output by calling /bin/id in my trailing command.  
+<img width="1261" alt="Screen Shot 2021-02-15 at 4 57 46 PM" src="https://user-images.githubusercontent.com/33213355/108003271-7c483900-6faf-11eb-92b7-b88365c39856.png">
+
+## Task 3.3
+
