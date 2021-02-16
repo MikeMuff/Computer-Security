@@ -44,9 +44,9 @@ I was able to get the server to tell me its process' user ID by using curl -A. I
 <img width="1261" alt="Screen Shot 2021-02-15 at 4 57 46 PM" src="https://user-images.githubusercontent.com/33213355/108003271-7c483900-6faf-11eb-92b7-b88365c39856.png">
 
 ## Task 3.3
-I was able to create a file inside the /tmp folder by using curl -e. I first created a test string within the initial echo command, from there I established the Content-Type and was able to get the server to create a file within the temp folder but running /bin/mktemp in my tralling command.  
+I was able to create a file inside the /tmp folder by using curl -e. I first created a test string within the initial echo command, from there I established the Content-Type and was able to get the server to create a file within the temp folder by running /bin/mktemp in my tralling command.  
 <img width="1271" alt="Screen Shot 2021-02-16 at 9 47 43 AM" src="https://user-images.githubusercontent.com/33213355/108094982-9bd97300-703c-11eb-8e06-25fa5c3b1642.png">  
-Here is the /tmp folder within my shellshock bash that was created  
+Here is the /tmp folder within my shellshock bash that was created.  
 <img width="750" alt="Screen Shot 2021-02-16 at 9 48 19 AM" src="https://user-images.githubusercontent.com/33213355/108095102-bf042280-703c-11eb-93db-617f4ba58227.png">  
 
 ## Task 3.4
@@ -69,7 +69,7 @@ Server shell.
 For this task I nagivated into the vul.cgi file with the command nano /usr/lib/cgi-bin/vul.cgi and edited the script to /bin/bash.  
 
 ## Task 5.1
-After reruning the same attack that I previously did for 3.1, instead of outputing the etc/passwd file it just printed "Hello World"  
+After reruning the same attack that I previously did for 3.1, instead of outputing the etc/passwd file it just printed "Hello World".  
 <img width="1337" alt="Screen Shot 2021-02-16 at 11 58 44 AM" src="https://user-images.githubusercontent.com/33213355/108108862-6a69a300-704e-11eb-8ab7-2ff96243a9b8.png">  
 
 ## Task 5.2
