@@ -28,7 +28,7 @@ buffer: 168
 
 
 ## Task 4.1
-Afting executing the make setiud call, I initially ran a32.out and a64.out without adding the setuid(0) shellcode. This ultimatly executed a normal seed shell for both programs that do not contain root privileges. 
+After executing the make setiud call, I initially ran a32.out and a64.out without adding the setuid(0) shellcode. This ultimately executed a normal seed shell for both programs that do not contain root privileges. 
 <img width="1044" alt="Screen Shot 2021-03-01 at 10 08 20 AM" src="https://user-images.githubusercontent.com/33213355/109532335-3f337a80-7a76-11eb-9eed-c0650f714f46.png">  
 After adding the setuid(0) shellcode to both 64 and 32 bit statements and executing the make setuid call, when I ran both a32.out and a64.out it executed a root shell for me to use.  
 <img width="992" alt="Screen Shot 2021-03-01 at 10 14 09 AM" src="https://user-images.githubusercontent.com/33213355/109533053-0942c600-7a77-11eb-8bd1-c1103e0e6a97.png">  
