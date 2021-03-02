@@ -24,7 +24,9 @@ I was able to successfully execute my attack by running the debugger of the stac
 <img width="1136" alt="Screen Shot 2021-02-28 at 3 08 15 PM" src="https://user-images.githubusercontent.com/33213355/109435649-a4d12980-79d8-11eb-819c-4d184067ba8b.png">  
 
 ## Task 3
-buffer: 168
+Not being able to input the offset was tricky for this task. I was able to get my exploit attack to work by "spraying" the return address over the possbile size of the buffer (100-200 bytes). Then after running this exploit I was able to get a root shell.  
+<img width="649" alt="Screen Shot 2021-03-01 at 9 12 17 PM" src="https://user-images.githubusercontent.com/33213355/109596419-76844480-7ad3-11eb-8a02-f22ce8cac468.png">  
+<img width="1140" alt="Screen Shot 2021-03-01 at 9 12 03 PM" src="https://user-images.githubusercontent.com/33213355/109596441-81d77000-7ad3-11eb-8fdb-d9ea1332b7f8.png">  
 
 
 ## Task 4.1
