@@ -21,9 +21,8 @@ I was able to access the admin page by using the command curl 'www.seedlabsqlinj
 I tried to change the Salary value for user Alice by putting the following command into the username field. admin';#UPDATE credential SET Salary = '30000' WHERE Username = 'Alice'. It did not work because the prepared statement countermeasure only compiles the first statement. Values which are transmitted later using a different protocol are not compiled like the statement template. If the statement template is not derived from external input, SQL injection cannot occur.  
 
 # Task 3.1
-I was able to complete this task but putting using the UPDATE feature within php. I did this by loggin into Alice's account and inputing ',salary='40000 into the NickName box.  
+I was able to complete this task by using the UPDATE feature within php. I did this by logging into Alice's account and inputing ',salary='40000 into the NickName box of the Edit Profile tab.  
 ![Screen Shot 2021-03-10 at 1 31 15 PM](https://user-images.githubusercontent.com/33213355/110693814-1a8d8000-81a5-11eb-8073-fd6f51db0649.png)  
-
 
 # Task 3.2
 I was able to complete this task by using the ',salary='1' WHERE ID=4;# command inside of ALice's Edit Profile feature. This changed Samy's salary value to 1 on the database.  
@@ -36,13 +35,13 @@ I was able to change the password of Samy's user by putting the new password 'pa
 
 # Task 4.1
 I was able to finish this task but rewriting my unsafe.php file code to use prepared statements. I did this by following the example givin in the lab instructions. Then after I did that successfully I went into my getinfo.php file and changed some of the values to bind_'value' in order to properly sync what was being called in my other file. After successfully doing this when attempting to use a SQL Injection attack or enter in a user and password incorrectly, I am outputed a table with no values. When inputing a correct user/pass combo, I am outputed that user's correct values.  
-Code for my unsafe.php file.
+Code for my unsafe.php file.  
 <img width="696" alt="Screen Shot 2021-03-10 at 7 04 46 PM" src="https://user-images.githubusercontent.com/33213355/110724683-7ff86580-81d3-11eb-8aa7-01af8486b5ab.png">  
-Code for my getinfo.php file.
+Code for my getinfo.php file.  
 <img width="623" alt="Screen Shot 2021-03-10 at 7 04 11 PM" src="https://user-images.githubusercontent.com/33213355/110724648-6bb46880-81d3-11eb-8eae-1c7104c1b66d.png">  
-Output when attempting SQL Injection attack.
+Output when attempting SQL Injection attack.  
 ![Screen Shot 2021-03-10 at 6 58 48 PM](https://user-images.githubusercontent.com/33213355/110724618-58090200-81d3-11eb-80fd-2d0c81abee3b.png)  
-Output when correctly inputing user/pass.  
+Output when correctly inputing user/pass.   
 ![Screen Shot 2021-03-10 at 7 01 59 PM](https://user-images.githubusercontent.com/33213355/110724720-930b3580-81d3-11eb-9e66-8c5cfbc4bec5.png)  
 
 
