@@ -34,6 +34,19 @@ I was able to change the password of Samy's user by putting the new password 'pa
 ![Screen Shot 2021-03-10 at 2 17 14 PM](https://user-images.githubusercontent.com/33213355/110698837-604d4700-81ab-11eb-9ff6-6b384366842f.png)  
 ![Screen Shot 2021-03-10 at 2 17 28 PM](https://user-images.githubusercontent.com/33213355/110698882-70652680-81ab-11eb-80a6-ed6212080311.png)  
 
+# Task 4.1
+I was able to finish this task but rewriting my unsafe.php file code to use prepared statements. I did this by following the example givin in the lab instructions. Then after I did that successfully I went into my getinfo.php file and changed some of the values to bind_'value' in order to properly sync what was being called in my other file. After successfully doing this when attempting to use a SQL Injection attack or enter in a user and password incorrectly, I am outputed a table with no values. When inputing a correct user/pass combo, I am outputed that user's correct values.  
+Code for my unsafe.php file.
+<img width="696" alt="Screen Shot 2021-03-10 at 7 04 46 PM" src="https://user-images.githubusercontent.com/33213355/110724683-7ff86580-81d3-11eb-8aa7-01af8486b5ab.png">  
+Code for my getinfo.php file.
+<img width="623" alt="Screen Shot 2021-03-10 at 7 04 11 PM" src="https://user-images.githubusercontent.com/33213355/110724648-6bb46880-81d3-11eb-8eae-1c7104c1b66d.png">  
+Output when attempting SQL Injection attack.
+![Screen Shot 2021-03-10 at 6 58 48 PM](https://user-images.githubusercontent.com/33213355/110724618-58090200-81d3-11eb-80fd-2d0c81abee3b.png)  
+Output when correctly inputing user/pass.  
+![Screen Shot 2021-03-10 at 7 01 59 PM](https://user-images.githubusercontent.com/33213355/110724720-930b3580-81d3-11eb-9e66-8c5cfbc4bec5.png)  
+
+
+
 
 
 Alice';UPDATE credential SET Salary=82000 WHERE Name='Alice';
