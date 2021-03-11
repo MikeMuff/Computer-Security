@@ -18,7 +18,7 @@ I was able to access the admin page by using the command curl 'www.seedlabsqlinj
 <img width="1424" alt="Screen Shot 2021-03-09 at 8 42 21 PM" src="https://user-images.githubusercontent.com/33213355/110573287-3b5bc400-8118-11eb-8e04-f91d140ec0ad.png">  
 
 # Task 2.3
-I tried to change the Salary value for user Alice by putting the following command into the username field. admin';#UPDATE credential SET Salary = '30000' WHERE Username = 'Alice'. It did not work because the prepared statement countermeasure only compiles the first statement. Values which are transmitted later using a different protocol are not compiled like the statement template. If the statement template is not derived from external input, SQL injection cannot occur.  
+I tried to run multiple SQL statements in one attack strong by putting the following command into the username field. 'or name='admin'; UPDATE credential Name='test' WHERE Name='admin';#. It did not work because the prepared statement countermeasure only compiles the first statement. Values which are transmitted later using a different protocol are not compiled like the statement template. If the statement template is not derived from external input, SQL injection cannot occur.  
 
 # Task 3.1
 I was able to complete this task by using the UPDATE feature within php. I did this by logging into Alice's account and inputing ',salary='40000 into the NickName box of the Edit Profile tab.  
@@ -45,7 +45,3 @@ Output when correctly inputing user/pass.
 ![Screen Shot 2021-03-10 at 7 01 59 PM](https://user-images.githubusercontent.com/33213355/110724720-930b3580-81d3-11eb-9e66-8c5cfbc4bec5.png)  
 
 
-
-
-
-Alice';UPDATE credential SET Salary=82000 WHERE Name='Alice';
