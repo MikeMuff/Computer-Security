@@ -32,7 +32,7 @@ I was able to successfully make it to where when anybody visits samy's profile p
 If Editor mode was only provided then we could not successfully launch the attack because when in Editor mode extra HTML code is added to the text typed into the field. This ultiately encodes all special characters which replaces alot of our attack code and ultimaley just pastes our attack into the about me field.   
 ![Screen Shot 2021-03-28 at 2 57 13 PM](https://user-images.githubusercontent.com/33213355/112767871-52365d80-8fd6-11eb-9611-5c4aa820a0cc.png)   
 
-# Task 5
+# Task 5.1
 I was able to successfully create an attack that would modify another users profile in a few steps. Firstly, I logged into an account and observed the HTTP Header Main output of when I hit the Edit profile tab. After doing this I was able to construct the url of our attack.   
 ![Screen Shot 2021-03-28 at 3 18 32 PM](https://user-images.githubusercontent.com/33213355/112769044-4352a980-8fdc-11eb-938f-c9d4b6da5c6f.png)   
 Secondly, I was able to construct the content and guid part of our attack by editing the about me section of my profile while viewing the output of the HTTP Header program. From here I was able to observe what was executed when I changed my about me section.   
@@ -41,3 +41,15 @@ Secondly, I was able to construct the content and guid part of our attack by edi
 Then simply added every variable given within the code(name, guid, ts, token) plus what message I wanted to be changed within the victem's bio. After pasting my code into samy's about me section I tested it while logged in to alice's account and when navigating to samy's page, her about me section was automatically changed to the string that I put.   
 ![Screen Shot 2021-03-28 at 3 38 42 PM](https://user-images.githubusercontent.com/33213355/112769202-033ff680-8fdd-11eb-95df-4be4e225c33b.png)   
 <img width="987" alt="Screen Shot 2021-03-28 at 3 47 12 PM" src="https://user-images.githubusercontent.com/33213355/112769208-089d4100-8fdd-11eb-9571-077e83e04a1d.png">   
+
+# Task 5.2
+When I removed line 1 of the attack, the attack no longer works because it cannot find the name variable of the user navigating to samy's page.   
+
+# Task 6
+I was able to successfully write a self-propagating XSS Worm by copying my code over from the last attack and migrated it with the example code given with the DOM approach in the lab instructions. I then added an attack variable and called the wormCode variable inside of that which made the attack self propagating. After that I created a second sendurl and Ajax variable in order to also execute the add samy as a friend attack. I tested my attack by logging in to boby's account, navigating to samy's profile and boby's bio was changed as well as samy was added as a friend. I then logged into Charlie's account which I had not used once this lab until now and when I navigated to boby's page the same output occured.   
+![Screen Shot 2021-03-28 at 4 42 44 PM](https://user-images.githubusercontent.com/33213355/112770815-bc0a3380-8fe5-11eb-964b-5b85b8a3f625.png)   
+![Screen Shot 2021-03-28 at 4 42 54 PM](https://user-images.githubusercontent.com/33213355/112770826-d0e6c700-8fe5-11eb-90ae-c8802b218555.png)   
+![Screen Shot 2021-03-28 at 4 44 11 PM](https://user-images.githubusercontent.com/33213355/112770829-d8a66b80-8fe5-11eb-9765-467a094c0aae.png)   
+![Screen Shot 2021-03-28 at 4 44 21 PM](https://user-images.githubusercontent.com/33213355/112770839-e2c86a00-8fe5-11eb-9eca-ee78cfd33da5.png)   
+<img width="794" alt="Screen Shot 2021-03-28 at 4 44 49 PM" src="https://user-images.githubusercontent.com/33213355/112770846-e9ef7800-8fe5-11eb-9b2a-44cc529b7046.png">   
+
