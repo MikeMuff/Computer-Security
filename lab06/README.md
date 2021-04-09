@@ -40,6 +40,29 @@ CFB
 OFB   
 <img width="1130" alt="Screen Shot 2021-04-08 at 6 39 49 PM" src="https://user-images.githubusercontent.com/33213355/114112541-d2dc4000-9899-11eb-9e34-00a22eed5f83.png">   
 
+# Task 4.1
+- In ECB mode, only one block is affected when any problem in a cipher text happens; furthermore; moreover, each block is decrypted independently. However, the corrupted bit of the 55th byte in cipher text block 8 bytes might spread to all n bits in plaintext block 8 bytes since we do the decryption one block at a time.
+- In CBC mode, there was affect in two blocks.
+- In CFB mode, there is problem in n / r number of blocks. Therefore, the error propagation criterion is poorer (Modes of Operation of Block Ciphers).
+- In OFB mode, the feedback is only in the key-generation system. If the single digit of the 55th byte corrupted, then in plain text that only that byte or character is corrupted. Thus, only OFB mode shows the most promising result and almost all the texts are recovered.
+
+# Task 4.2
+After successfully encrypting, intentionally corrupting the fule and decrypting it I could only recover a few of the first words from the file with ECB.   
+<img width="1416" alt="Screen Shot 2021-04-08 at 7 18 49 PM" src="https://user-images.githubusercontent.com/33213355/114115130-81cf4a80-989f-11eb-90a2-fac2eaa73c09.png">   
+
+# Task 4.3
+With CBC I was only able to once again make out a few words after decrypting the corrupted file.   
+<img width="712" alt="Screen Shot 2021-04-08 at 7 24 54 PM" src="https://user-images.githubusercontent.com/33213355/114115520-34071200-98a0-11eb-8eaf-959db93f6958.png">   
+
+# Task 4.4
+With CFB I was able to decrypt more words than the other two previous techniques.   
+<img width="1426" alt="Screen Shot 2021-04-08 at 7 28 19 PM" src="https://user-images.githubusercontent.com/33213355/114115761-a841b580-98a0-11eb-8b6b-2b3dbf0c1e84.png">   
+
+# Task 4.5
+With OFB the whole file was successfully decrypted except for the bit that I changed.   
+<img width="1407" alt="Screen Shot 2021-04-08 at 7 33 51 PM" src="https://user-images.githubusercontent.com/33213355/114116164-67966c00-98a1-11eb-8cad-59da17987c3e.png">   
+
+# Task 5.1
  
 
 
