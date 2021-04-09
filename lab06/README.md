@@ -62,7 +62,7 @@ With CFB I was able to decrypt more words than the other two previous techniques
 With OFB the whole file was successfully decrypted except for the bit that I changed.   
 <img width="1407" alt="Screen Shot 2021-04-08 at 7 33 51 PM" src="https://user-images.githubusercontent.com/33213355/114116164-67966c00-98a1-11eb-8cad-59da17987c3e.png">   
 
-# Task 5.1
- 
-
+# Task 5.1   
+For this task I begin by checking the uniqueness of the IV importance. If I use the same key for many things, you will be able to crack into many things that the user may have encrypted with the same code. My observation Is that the encoding with a different encryption IV will change the look of the file within.
+<img width="1425" alt="Screen Shot 2021-04-08 at 7 42 39 PM" src="https://user-images.githubusercontent.com/33213355/114116852-a842b500-98a2-11eb-9f2f-f224cd96af2f.png">   
 
