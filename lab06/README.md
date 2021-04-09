@@ -29,4 +29,17 @@ I was able to successfully encrypt these files using 128-bit AES with CBC mode b
 <img width="1261" alt="Screen Shot 2021-04-08 at 6 22 29 PM" src="https://user-images.githubusercontent.com/33213355/114111724-ee464b80-9897-11eb-8951-adfc6d0787b4.png">   
 
 # Task 3.2
-I learned with research that CFB and OFB techniques do not require padding because they take the outputs of the previos block which has to be the same size to the cipher block size.
+I learned with research that CFB and OFB techniques do not require padding because they take the outputs of the previous block which has to be the same size as the cipher block size. This has to be the same size as the inputs of its last cipher block encryption.   
+
+ECB   
+<img width="1091" alt="Screen Shot 2021-04-08 at 6 36 15 PM" src="https://user-images.githubusercontent.com/33213355/114112336-68c39b00-9899-11eb-89be-a6860eb34588.png">   
+
+CFB   
+<img width="562" alt="Screen Shot 2021-04-08 at 6 38 35 PM" src="https://user-images.githubusercontent.com/33213355/114112442-a7595580-9899-11eb-9f7a-e1b325a48cc4.png">   
+
+OFB   
+<img width="1130" alt="Screen Shot 2021-04-08 at 6 39 49 PM" src="https://user-images.githubusercontent.com/33213355/114112541-d2dc4000-9899-11eb-9e34-00a22eed5f83.png">   
+
+ 
+
+
