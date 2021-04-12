@@ -6,3 +6,20 @@
 - 4/09/21
 
 # Task 1.1
+After generating the two output files out1.bin and out2.bin, I checked the diff between the two files which did not give me much information.   
+<img width="983" alt="Screen Shot 2021-04-12 at 1 16 06 PM" src="https://user-images.githubusercontent.com/33213355/114449431-f2bd7d80-9b91-11eb-8690-d977e1ee98dd.png">   
+
+After using the hex editor to look at each out file, I noticed that the files get padded with zeros.   
+![Screen Shot 2021-04-12 at 1 20 31 PM](https://user-images.githubusercontent.com/33213355/114449458-fb15b880-9b91-11eb-8a9e-2dc059a91f50.png)   
+
+# Task 1.2
+The way that MD5 processing files is in blocks of size 64. Hence if a file is not 64 bits it will be padded in order to reach the desired size.   
+
+# Task 1.3
+Using the truncate command I was able to create a file that was exactly 64 bits, then I ran the md5collgen command on that txt file that created two new out3.bin and out4.bin files. After viewing the new files with a hex editor, I observed that no 00 padding is required.   
+<img width="711" alt="Screen Shot 2021-04-12 at 1 28 53 PM" src="https://user-images.githubusercontent.com/33213355/114450552-61e7a180-9b93-11eb-9c68-59f66ecd058d.png">   
+![Screen Shot 2021-04-12 at 1 31 16 PM](https://user-images.githubusercontent.com/33213355/114450578-6a3fdc80-9b93-11eb-9336-92217eb99bc6.png)   
+
+# Task 1.4
+After observing both out3.bin and out4.bin files, it appears that there is no difference between the two files. All the bits are the same, I predict that this might cause some sort of error in a future task.   
+![Screen Shot 2021-04-12 at 1 31 16 PM](https://user-images.githubusercontent.com/33213355/114450578-6a3fdc80-9b93-11eb-9336-92217eb99bc6.png)
