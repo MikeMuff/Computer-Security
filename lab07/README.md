@@ -23,3 +23,13 @@ Using the truncate command I was able to create a file that was exactly 64 bits,
 # Task 1.4
 After observing both out3.bin and out4.bin files, it appears that there is no difference between the two files. All the bits are the same, I predict that this might cause some sort of error in a future task.   
 ![Screen Shot 2021-04-12 at 1 31 16 PM](https://user-images.githubusercontent.com/33213355/114450578-6a3fdc80-9b93-11eb-9336-92217eb99bc6.png)
+
+# Task 2
+In this task I am asked to show that even if I create and hash files I can still change the contents of what is in the files while getting the same hashes for the two binary files. First I created two new fout1.bin and fout2.bin files. Then I ran the MD5sum command in order to make sure the files are equal to eachother which we find out they are.   
+<img width="585" alt="Screen Shot 2021-04-12 at 1 49 45 PM" src="https://user-images.githubusercontent.com/33213355/114452668-f521d680-9b95-11eb-829c-dadc6919e003.png">   
+Next I concatenated word "test" into each file to change them. This resulted in the file changing, but the hashes are still the same.   
+<img width="528" alt="Screen Shot 2021-04-12 at 1 51 21 PM" src="https://user-images.githubusercontent.com/33213355/114453050-5e094e80-9b96-11eb-93cf-553530ba5736.png">   
+
+# Task 3
+
+# Task 
