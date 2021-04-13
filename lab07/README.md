@@ -31,19 +31,17 @@ Next I concatenated word "test" into each file to change them. This resulted in 
 <img width="528" alt="Screen Shot 2021-04-12 at 1 51 21 PM" src="https://user-images.githubusercontent.com/33213355/114453050-5e094e80-9b96-11eb-93cf-553530ba5736.png">   
 
 # Task 3
-In order start this task, first I compiled the code print_array.c that was given in the lab then I grabbed the head of the program.   
-<img width="577" alt="Screen Shot 2021-04-12 at 7 30 21 PM" src="https://user-images.githubusercontent.com/33213355/114483427-8ceae900-9bc5-11eb-8f3e-c2e12e2b10b9.png">   
-
-Next I took the head of the file and saved it as the prefix and ran MD5collgen on the pogram in order to create program1 and program2.   
-<img width="1150" alt="Screen Shot 2021-04-12 at 7 32 50 PM" src="https://user-images.githubusercontent.com/33213355/114483620-ebb06280-9bc5-11eb-80f8-73c89d4688b6.png">   
+In order start this task, first I compiled the code print_array.c that was given in the lab then I grabbed the head of the program. Next I took the head of the file and saved it as the prefix as well as the tail which was saved as the suffix and ran MD5collgen on the program in order to create some out files.   
+<img width="515" alt="Screen Shot 2021-04-13 at 12 21 40 PM" src="https://user-images.githubusercontent.com/33213355/114601794-28766b00-9c53-11eb-9448-2b4ae3683964.png">   
 
 After looking at the hash tables of these newly created programs, we note that the files are the same MD5 hash, but with different suffix's.   
 ![Screen Shot 2021-04-12 at 7 39 48 PM](https://user-images.githubusercontent.com/33213355/114484125-dee03e80-9bc6-11eb-8d1e-2ae58cb046a0.png)   
 ![Screen Shot 2021-04-12 at 7 39 52 PM](https://user-images.githubusercontent.com/33213355/114484152-e99ad380-9bc6-11eb-82b5-a3eebeb7ba68.png)   
 
-Next I grabbed the common ending of the print_aray file I created and concatenated it with the two program1 and program2 files.
-<img width="532" alt="Screen Shot 2021-04-12 at 7 39 42 PM" src="https://user-images.githubusercontent.com/33213355/114484244-14852780-9bc7-11eb-8c6b-d030cc00f12b.png">   
+Next I concatenated the prefix and suffix with these two files in order to create arr1.out and arr2.out   
+<img width="451" alt="Screen Shot 2021-04-13 at 12 21 54 PM" src="https://user-images.githubusercontent.com/33213355/114602028-64113500-9c53-11eb-908c-91c9edab78a9.png">   
 
-
+Finally, we run the two programs to verify that they are indeed different.   
+<img width="1420" alt="Screen Shot 2021-04-13 at 12 08 03 PM" src="https://user-images.githubusercontent.com/33213355/114599961-07ad1600-9c51-11eb-8da9-d4048d5e266d.png">   
 
 
