@@ -50,6 +50,6 @@ In order to successfully execute this task, first we compile the benign_evil.c f
 
 Next we want to create two new files that we can grad the middle section of. We use the head function again and do the same for the offset of the middle and the end. Then we concatenate them all together and check MD5sum to verify they are the same. After verifying that they are the same we chmod the programs to make them executable and run them to make sure we completed the task correctly.   
 <img width="477" alt="Screen Shot 2021-04-13 at 12 55 55 PM" src="https://user-images.githubusercontent.com/33213355/114605736-a177c180-9c57-11eb-827b-6e70f138308c.png">   
-
+<img width="331" alt="Screen Shot 2021-04-13 at 1 03 36 PM" src="https://user-images.githubusercontent.com/33213355/114606578-ae48e500-9c58-11eb-8031-56d8dc95c21a.png">   
 
 
