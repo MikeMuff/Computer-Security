@@ -44,4 +44,12 @@ Next I concatenated the prefix and suffix with these two files in order to creat
 Finally, we run the two programs to verify that they are indeed different.   
 <img width="1420" alt="Screen Shot 2021-04-13 at 12 08 03 PM" src="https://user-images.githubusercontent.com/33213355/114599961-07ad1600-9c51-11eb-8da9-d4048d5e266d.png">   
 
+# Task 4
+In order to successfully execute this task, first we compile the benign_evil.c file. Then we check the contents of the binary to see that the first array starts at 12,352. So we use similar commands in Task 3 for cutting the head and MD5 hash.  
+<img width="528" alt="Screen Shot 2021-04-13 at 12 48 03 PM" src="https://user-images.githubusercontent.com/33213355/114604742-82c4fb00-9c56-11eb-899c-04b6cf970f5a.png">   
+
+Next we want to create two new files that we can grad the middle section of. We use the head function again and do the same for the offset of the middle and the end. Then we concatenate them all together and check MD5sum to verify they are the same. After verifying that they are the same we chmod the programs to make them executable and run them to make sure we completed the task correctly.   
+<img width="477" alt="Screen Shot 2021-04-13 at 12 55 55 PM" src="https://user-images.githubusercontent.com/33213355/114605736-a177c180-9c57-11eb-827b-6e70f138308c.png">   
+
+
 
