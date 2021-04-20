@@ -6,7 +6,7 @@
 - 4/15/21
 
 # Task 1
-In this task we are asked to dervie a public key given p, q, and e provided by Travis. The values will then be put into a C program that we are given in the lab instructions and then are slightly modified. After running the program, we are given our private key.   
+In this task we are asked to dervie a public key given p, q, and e provided by Travis. The values will then be put into a C program that we are given in the lab instructions and then are slightly modified. After running the program, we are given our private key which is the second output below.     
 <img width="744" alt="Screen Shot 2021-04-20 at 11 31 32 AM" src="https://user-images.githubusercontent.com/33213355/115439598-fe312a00-a1cb-11eb-9bc2-6557822ead23.png">   
 
 # Task 2
