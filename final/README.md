@@ -29,5 +29,26 @@ Reflected XSS exploits occurs when an attacker causes a user to supply dangerous
 (Task 1.5 and 1.6 refrence: https://owasp.org/www-community/attacks/xss/#:~:text=As%20the%20examples%20demonstrate%2C%20XSS,data%20in%20an%20HTTP%20response.&text=Reflected%20XSS%20exploits%20occur%20when,executed%20by%20the%20web%20browser. )   
 
 # Task 1.7
+Alice now has g<sup>y</sup> mod p and x while Bob has g<sup>x</sup> mod p and y. To get the common secret, Alice can compute g<sup>y<sup>x</sup></sup> mod p and Bob can compute g<sup>x<sup>y</sup></sup> mod p. By the rules of exponents Alice and Bob will then have the same value.   
+
+# Task 1.8
+We use hybrid encryption because public key cryptography is more secure but slower, while hybrid encryption is used to speed up communication while minimally compromising security.   
+
+# Task 1.9.1
+The libraries are found using the $PATH environment variable.
+
+# Task 1.9.2 
+A potential risk of using this approach is that the shell will execute the first matching command it finds. An attacker could then change the $PATH variable to point to a different directory where some malicious code is in an executable.
+
+# Task 1.10
+Three countermeasures to buffer-overflow attacks
+1. Make the stack non-executable. Doing this makes it so the input can never be interpreted as code.
+2. Adress Space Layout Randomization (ASLR). This begins the stack frame at a random memory location so that an attacker cannot use a consistent memory address when performing the buffer-overflow attack.
+3. Stack guard. This is a slot in the stack frame that is expected to remain unchanged throughout the course of its existence by initializing randomly with each call.
+
 
 # Task 2.1
+
+# Task 2.2 
+
+# Task 3
