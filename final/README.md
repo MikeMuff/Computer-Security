@@ -48,6 +48,14 @@ Three countermeasures to buffer-overflow attacks
 
 
 # Task 2.1
+Ryan Darnell lecture   
+- Approach: The approach that I decided to go with for this activity would be the CTR method. My group decided to use this method because when decrypting information within the data node, it will attempt to decrpyt as much information as possible unlike GCM where if any information is wrong then the whole data pakcet would be dropped. This is due to the fact that our information is data sensitive and it would be deterimental to the client if all of the information is lost.   
+- Pros: Software will attempt to open up as much of the project as possible, Might inlcude integrity checking feature if client wanted, Only the data<node> would be encrypted, causeing less encryption time and wasteing fewer resources.   
+- Cons: We need the project name, id, etc while the encryption might not get all of information, might be an issue if data recovery is a bigger proirity than confidentiality, Depending on how large the project files that might cause enryption problems later on.   
+- Potential challenges: If the customer wants to chose their own method (CBC CTR, GCM) we could run into problems if our approach only works for one of these methods, if the customer Adding base64 encoding could be a confounding issue with the design structure, If this a large project, how would we compress? Certian areas within the compression might impact the way it decompresses. Would need to find a method to generate a new key every encryption/decryption.   
+
+
+
 
 # Task 2.2 
 
