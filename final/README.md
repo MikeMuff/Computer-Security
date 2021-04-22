@@ -58,6 +58,32 @@ Ryan Darnell lecture
 
 
 # Task 2.2 
+What is compliance and why is it important?
+Ensures that rules/policies are being followed and companies are meeting security-related requirements. These rules are typically set by government, industry, or other 3rd parties.
+-	Helping us maintain the CIA triad.   
+
+What is a compliance framework?
+A structure set of guidelines and best practices that details a companies processes for meeting regulatory requirements.
+-	Many different types of compliances frameworks   
+
+3 examples of a compliance rule/test and why this check could be helpful towards ensuring compliance
+-	PCI DSS: compliance framework TODO
+-	HIPPA: Deal with sensitive health information
+-	NIST: General framework for security practices for government agencies.
+-	STIG: Used for configuration of computer and network systems.
+
+-	STIG -230503: The Red Hat enterprise Linux operating system must be configured to disable USB mass storage.
+o	This is a rule because USB storage permits easy introduction of unknown devices, which could have malicious intentions.
+-	STIG-230534: The Red Hat Enterprise Linux operating system must be configured so that the root account must be the only account having unrestricted access to the system.
+o	Permissions are important, someone who has root permissions could potentially mess up an entire system.   
+-	STIG – 217976: The audit system must be configured to audit all use of setuid and setgid programs
+o	Setuid programs can be great but can also be exploited.
+o	Logging all uses of these programs can help monitor for unusual activity or identify malicious events.
+-	STIG – 16811: the designer will ensure the application does not have cross site scripting (XSS) vulnerabilities
+
+
+
+
 
 # Task 3.1
 What the program audic.c does is it takes in a file name and then makes a call to system() with /bin/cat <filename> as the argument. Assuming a regular file name, this will print the contents of the file to the console.   
