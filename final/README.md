@@ -51,4 +51,19 @@ Three countermeasures to buffer-overflow attacks
 
 # Task 2.2 
 
-# Task 3
+# Task 3.1
+What the program audic.c does is it takes in a file name and then makes a call to system() with /bin/cat <filename> as the argument. Assuming a regular file name, this will print the contents of the file to the console.   
+  
+# Task 3.2
+After compiling the audit.c file, we run the program passing in the argument "a; sudo bash". This will tell the program to open the file a and then open a privliged shell. As you can see in the image below the user now has access to the root shell and can execute any command.   
+<img width="405" alt="Screen Shot 2021-04-21 at 6 47 26 PM" src="https://user-images.githubusercontent.com/33213355/115639642-594d4480-a2d2-11eb-8615-347d3f242f48.png">   
+
+# Task 3.3
+For this task, the execve() function is being used instead of the system() function. This means that we as the attacker can no longer chain additional commands onto our input. After researching the /bin/more program I found out that for long enough files, there is a section where commands can be entered. As you can see bellow after running the audit2 file with our long text.txt population file, I was able to execute the !sudo bash command, granting me root access.   
+<img width="393" alt="Screen Shot 2021-04-21 at 7 14 31 PM" src="https://user-images.githubusercontent.com/33213355/115641374-2ad16880-a2d6-11eb-86a0-21db0b7989a9.png">   
+
+# Task 4.1
+
+
+
+
