@@ -63,6 +63,15 @@ For this task, the execve() function is being used instead of the system() funct
 <img width="393" alt="Screen Shot 2021-04-21 at 7 14 31 PM" src="https://user-images.githubusercontent.com/33213355/115641374-2ad16880-a2d6-11eb-86a0-21db0b7989a9.png">   
 
 # Task 4.1
+One method of defeating SQL injection attacks is to sanitize the input. That is it ensure special characters are interpreted as data. While this solution is able to defeat SQL injections, it does not remove the fundamental issue that data and code are not seperated Because of this an attacker might be able to pull off a SQL injection.
+
+# Task 4.2 
+A malicious emplyee could set his/her salary to a higher value by entering in the fake' 1000000)"; # command into the password field. This is performed on SQL database shown below.   
+![Screen Shot 2021-04-22 at 2 34 18 PM](https://user-images.githubusercontent.com/33213355/115781606-d67ec500-a377-11eb-9635-bfb79f81cfd9.png)   
+
+# Task 4.3
+In order for an attacker to get the database to run an arbitrary command SQL statement, he could run 0'; UPDATE credential SET Salary=0 WHERE Name='test';# . Ths is entered for the eid field. Below shows the output which first searches for anyone with an eid value of 0 and then changes anyone with the username 'test' to have a salary of 0.   
+![Screen Shot 2021-04-22 at 2 39 00 PM](https://user-images.githubusercontent.com/33213355/115782121-894f2300-a378-11eb-8731-d80a22ecad94.png)   
 
 
 
