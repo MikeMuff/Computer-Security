@@ -67,7 +67,7 @@ A structure set of guidelines and best practices that details a companies proces
 -	Many different types of compliances frameworks   
 
 3 examples of a compliance rule/test and why this check could be helpful towards ensuring compliance
--	PCI DSS: compliance framework TODO
+-	PCI DSS: compliance framework for companies that process, store, or transmit credit card information.
 -	HIPPA: Deal with sensitive health information
 -	NIST: General framework for security practices for government agencies.
 -	STIG: Used for configuration of computer and network systems.
@@ -105,7 +105,9 @@ A malicious emplyee could set his/her salary to a higher value by entering in th
 
 # Task 4.3
 In order for an attacker to get the database to run an arbitrary command SQL statement, he could run 0'; UPDATE credential SET Salary=0 WHERE Name='test';# . Ths is entered for the eid field. Below shows the output which first searches for anyone with an eid value of 0 and then changes anyone with the username 'test' to have a salary of 0.   
-![Screen Shot 2021-04-22 at 2 39 00 PM](https://user-images.githubusercontent.com/33213355/115782121-894f2300-a378-11eb-8731-d80a22ecad94.png)   
+![Screen Shot 2021-04-22 at 2 39 00 PM](https://user-images.githubusercontent.com/33213355/115782121-894f2300-a378-11eb-8731-d80a22ecad94.png)  
+
+Thank you for an amazing Semester!
 
 
 
